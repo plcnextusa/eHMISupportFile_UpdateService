@@ -44,3 +44,7 @@ update
 3. Zip the folder into a tarball using this command: ```tar -czf update.tar update```
 4. Copy the tar onto your PC using SFTP
 5. Add the tarball to the support folder on your PLCnext Application.
+
+### updatefiles.sh
+The updatefiles.sh file will be used to update all settings and move files to your specified locations. 
+There are no guides on this as this must be developed yourself, built for your application.
