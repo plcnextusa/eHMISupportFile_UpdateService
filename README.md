@@ -28,7 +28,7 @@ There are no guides on this as this must be developed yourself, built for your a
 4. Copy the tar onto your PC using SFTP
 5. Add the tarball to the support folder on your PLCnext Application.
 
-### update.tar expected topology
+### update.tar recommended topology
 #### Note: ```updateFiles.sh``` MUST exist. It updates the files within the tarball.
 
 ```
