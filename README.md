@@ -1,4 +1,4 @@
-# Auto Script and File Updater with PLCnext #
+# Auto Script and File Updater with PLCnext eHMI Support Files #
 This application is used to deploy Linux based applications or Linux file changes to the PLCnext Controller via eHMI support files.
 ## 1. Installation
 1. Download all files onto your PC, then connect to the PLCnext via WinSCP or your favorite SSH client.
