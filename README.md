@@ -11,10 +11,22 @@ chmod +x install.sh
 ./install.sh
 ```
 
-Once the script returns "Install Complete", the auto-updater code is installed and running. 
-
+Once the script returns "Install Complete", the auto-updater code is installed and running.
 
 ## Application Notes:
+This application is looking for file ```update.tar``` within the eHMI support file location. 
+If found it extracts the tarball and runs the ```updateFiles.sh``` script. 
+
+### updatefiles.sh
+The updatefiles.sh file will be used to update all settings and move files to your specified locations. 
+There are no guides on this as this must be developed yourself, built for your application.
+
+### To create a tarball:
+1. Create a folder inside the /opt/plcnext/ directory: ```mkdir /opt/plcnext/update```
+2. Add all files and scripts into the folder
+3. Zip the folder into a tarball using this command: ```tar -czf update.tar update```
+4. Copy the tar onto your PC using SFTP
+5. Add the tarball to the support folder on your PLCnext Application.
 
 ### update.tar expected topology
 #### Note: ```updateFiles.sh``` MUST exist. It updates the files within the tarball.
@@ -38,13 +50,3 @@ update
 |    |-- ProficloudCA.crt
 
 ```
-### To create a tarball:
-1. Create a folder inside the /opt/plcnext/ directory: ```mkdir /opt/plcnext/update```
-2. Add all files and scripts into the folder
-3. Zip the folder into a tarball using this command: ```tar -czf update.tar update```
-4. Copy the tar onto your PC using SFTP
-5. Add the tarball to the support folder on your PLCnext Application.
-
-### updatefiles.sh
-The updatefiles.sh file will be used to update all settings and move files to your specified locations. 
-There are no guides on this as this must be developed yourself, built for your application.
