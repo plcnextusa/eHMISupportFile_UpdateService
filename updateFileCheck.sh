@@ -5,9 +5,6 @@ BASE_PATH=/opt/plcnext/
 EHMI_PATH=/opt/plcnext/projects/PCWE/Services/Ehmi/ehmi/
 LOGFILE=/opt/plcnext/logs/updates.log
 
-# Loop Counter
-index=0
-
 # Function to check for tar file and extract if exists
 function fileExists(idx) {
   # Check for update file
